@@ -356,11 +356,14 @@ def main():
     st.markdown("""
     <div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; border-left: 4px solid #888;">
         <h4 style="margin-top: 0; color: #555;">❗Notes & Disclaimers</h4>
-        <p style="color: #666; margin-bottom: 0;">
+        <p style="color: #666; margin-bottom: 15;">
             Streamlit does not rerender the UI on-the-fly. That is why you only see the SSOC field update after you
-            click away from the Job Title field or hit "enter". In a real deployment, the rerendering can be triggered
+            click away from the Job Title field or hit "enter", which triggers the rerender. In a real deployment, the rerendering can be triggered
             after the user stops typing for a preset time even before clicking away. The latency number shown here only covers
-            the time it took from the server receivng the job title input (after you click away or "enter") to you seeing the rendered result.
+            the time it took from the server receiving the job title input (after you click away or "enter") to you seeing the rendered result.
+        </p>
+        <p style="color: #666; margin-bottom: 0;">
+            <strong>Model License Notice:</strong> This application uses the all-MiniLM-L6-v2 model (Apache 2.0 license).
         </p>
     </div>
     """, unsafe_allow_html=True)
