@@ -186,11 +186,24 @@ def main():
 
     st.title("💼 SSOC Job Title Matcher")
 
+    st.write("")
+
+    st.markdown("""
+    <div style="background-color: #f0f2f6; padding: 20px; border-radius: 10px; border-left: 4px solid #888;">
+        <p style="color: #666; margin-bottom: 0;">
+            ⚠️ Startup performance in this demo is not indicative of real-world performance. This demo runs on free
+            community cloud servers and may need to be cold-started leading to higher latency.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.write("")
+
     # ========================================================================
     # DATA LOADING
     # ========================================================================
 
-    CSV_FILE_PATH = "SectionA_Job Title with Labelled SSOC.csv"
+    CSV_FILE_PATH = "SSOC.csv"
 
     try:
         with st.spinner("Loading SSOC database..."):
