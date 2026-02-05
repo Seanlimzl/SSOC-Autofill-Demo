@@ -365,6 +365,12 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
+    st.write("")
+    
+    st.markdown(
+    '<p style="color: #AAAAAA;">⚙️ Sean Lim / 02/2026 / MOM OA</p>',
+    unsafe_allow_html=True
+)
 
 # ============================================================================
 # RUN THE APP
