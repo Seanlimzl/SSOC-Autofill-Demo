@@ -199,6 +199,10 @@ def main():
 
     st.write("")
 
+    st.markdown("""
+    **Enter your job title and click away or hit "enter" to see the best matching SSOC Title.**
+    """, unsafe_allow_html=True)
+
     # ========================================================================
     # DATA LOADING
     # ========================================================================
@@ -294,7 +298,7 @@ def main():
     # ========================================================================
 
     selected_ssoc = st.selectbox(
-        "SSOC Category",
+        "SSOC Title",
         options=st.session_state.ordered_categories,
         index=st.session_state.selected_ssoc_index,
         key=f"ssoc_selectbox_{st.session_state.selectbox_key}"
